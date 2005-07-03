@@ -1,5 +1,5 @@
 Summary:	Easy to use template based dvd authoring tool
-Summary(pl):	£atwy narzêdzie oparte na szablonach dvd
+Summary(pl):	Proste narzêdzie oparte na szablonach dvd
 Name:		kmediafactory
 Version:	0.3.0
 Release:	0.1
@@ -8,8 +8,8 @@ Group:		X11/Applications/Multimedia
 Source0:	http://susku.pyhaselka.fi/damu/software/kmediafactory/%{name}-%{version}.tar.bz2
 # Source0-md5:	e61efce22161907449b07f8472eb7c7c
 URL:		http://susku.pyhaselka.fi/damu/software/kmediafactory/
-BuildRequires:	dvdauthor >= 0.6.11
 BuildRequires:	ImageMagick-devel >= 6.0
+BuildRequires:	dvdauthor >= 0.6.11
 BuildRequires:	libdv-devel
 BuildRequires:	mjpegtools
 Requires:	toolame
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 KMediafactory is easy to use template based dvd authoring tool. You can quickly create DVD menus for home videos and TV recordings in three simple steps.
 
 %description -l pl
-KMediaFactory jest ³atwym do u¿ywania narzêdziem opartym na szablonach dvd. Mo¿esz szybko stworzyæ menu dvd do domowych filmów i nagrywaæ tv w trzech prostych krokach.
+KMediaFactory jest ³atwym w u¿yciu narzêdziem opartym na szablonach dvd. Mo¿esz szybko stworzyæ menu dvd do domowych filmów i nagrywaæ tv w trzech prostych krokach.
 
 %package devel
 Summary:	Header files for kmediafactory
@@ -31,10 +31,10 @@ Group:		Development/Tools
 This package contains header files for kmediafactory
 
 %description devel -l pl
-Ten pakiet zawiera pliki nag³ówowe programu kmediafactory
+Ten pakiet zawiera pliki nag³ówkowe programu kmediafactory
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q
 
 %configure
 
