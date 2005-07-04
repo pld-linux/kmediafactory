@@ -8,10 +8,10 @@ Group:		X11/Applications/Multimedia
 Source0:	http://susku.pyhaselka.fi/damu/software/kmediafactory/%{name}-%{version}.tar.bz2
 # Source0-md5:	a2901674bc558112837e356e45b93a5a
 URL:		http://susku.pyhaselka.fi/damu/software/kmediafactory/
-BuildRequires:	ImageMagick-devel >= 6.0
+BuildRequires:	ImageMagick-devel >= 1:6.0
 BuildRequires:	dvdauthor >= 0.6.11
-BuildRequires:	qt-devel >= 3.3.2
-BuildRequires:	kdebase-devel >= 3.3
+BuildRequires:	qt-devel >= 6:3.3.2
+BuildRequires:	kdebase-devel >= 9:3.3
 BuildRequires:	mjpegtools
 Requires:	toolame
 Requires:	xine
