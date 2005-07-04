@@ -10,6 +10,8 @@ Source0:	http://susku.pyhaselka.fi/damu/software/kmediafactory/%{name}-%{version
 URL:		http://susku.pyhaselka.fi/damu/software/kmediafactory/
 BuildRequires:	ImageMagick-devel >= 1:6.0
 BuildRequires:	dvdauthor >= 0.6.11
+BuildRequires:	qt-devel >= 6:3.3.2
+BuildRequires:	kdebase-devel >= 9:3.3
 BuildRequires:	mjpegtools
 Requires:	toolame
 Requires:	xine-ui
