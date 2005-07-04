@@ -58,8 +58,9 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS README COPYING LICENSE
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
-%attr(755,root,root) %{_datadir}/*
-%attr(755,root,root) %{_includedir}/*
+%{_pixmapsdir}/*.png
+%{_iconsdir}/*/*/*/*.png
+%{_datadir}/apps/%{name}
 
 %files devel
 %defattr(644,root,root,755)
