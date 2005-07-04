@@ -61,12 +61,39 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS README COPYING LICENSE
-%attr(755,root,root) %{_bindir}/*
-%attr(755,root,root) %{_libdir}/lib*.so.*.*
-%{_pixmapsdir}/*.png
-%{_iconsdir}/*/*/*/*.png
-%{_datadir}/apps/%{name}
+%{_bindir}/*
+%{_libdir}/kde3/*
+%{_libdir}/lib*.so.*.*
+%{_datadir}/applnk/Utilities/*
+%{_datadir}/apps/kmediafactory/*
+%{_datadir}/apps/kmediafactory_output/*
+%{_datadir}/apps/kmediafactory_template/*
+%{_datadir}/apps/kmediafactory_video/*
+%{_datadir}/doc/HTML/en/kmediafactory/*
+%{_datadir}/doc/HTML/en/kmediafactory/index.cache.bz2
+%{_datadir}/doc/HTML/en/kmediafactory/index.docbook
+%{_datadir}/doc/HTML/en/kmediafactory/index.docbook.orig
+%{_datadir}/icons/crystalsvg/128x128/apps/kmediafactory.png
+%{_datadir}/icons/crystalsvg/128x128/mimetypes/kmediafactory_project.png
+%{_datadir}/icons/crystalsvg/16x16/apps/kmediafactory.png
+%{_datadir}/icons/crystalsvg/16x16/mimetypes/kmediafactory_project.png
+%{_datadir}/icons/crystalsvg/22x22/apps/kmediafactory.png
+%{_datadir}/icons/crystalsvg/22x22/mimetypes/kmediafactory_project.png
+%{_datadir}/icons/crystalsvg/32x32/actions/add_video.png
+%{_datadir}/icons/crystalsvg/32x32/apps/kmediafactory.png
+%{_datadir}/icons/crystalsvg/32x32/mimetypes/kmediafactory_project.png
+%{_datadir}/icons/crystalsvg/48x48/apps/kmediafactory.png
+%{_datadir}/icons/crystalsvg/48x48/mimetypes/kmediafactory_project.png
+%{_datadir}/icons/crystalsvg/64x64/apps/kmediafactory.png
+%{_datadir}/icons/crystalsvg/64x64/mimetypes/kmediafactory_project.png
+%{_datadir}/icons/crystalsvg/scalable/apps/kmediafactory.svgz
+%{_datadir}/icons/crystalsvg/scalable/mimetypes/kmediafactory_project.svgz
+%{_datadir}/mimelnk/application/x-kmediafactory.desktop
+%{_datadir}/services/kmediafactory_output.desktop
+%{_datadir}/services/kmediafactory_template.desktop
+%{_datadir}/services/kmediafactory_video.desktop
+%{_datadir}/servicetypes/kmediafactoryplugin.desktop 
 
 %files devel
 %defattr(644,root,root,755)
-%{_includedir}/kmediafactory
+%{_includedir}/%{name}/*.h
