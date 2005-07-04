@@ -10,11 +10,9 @@ Source0:	http://susku.pyhaselka.fi/damu/software/kmediafactory/%{name}-%{version
 URL:		http://susku.pyhaselka.fi/damu/software/kmediafactory/
 BuildRequires:	ImageMagick-devel >= 1:6.0
 BuildRequires:	dvdauthor >= 0.6.11
-BuildRequires:	qt-devel >= 6:3.3.2
-BuildRequires:	kdebase-devel >= 9:3.3
 BuildRequires:	mjpegtools
 Requires:	toolame
-Requires:	xine
+Requires:	xine-ui
 Requires:	zip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -60,10 +58,10 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS README COPYING LICENSE
-%{_bindir}/*
-%{_libdir}/kde3/*
-%{_libdir}/lib*.so.*.*
+%doc AUTHORS README COPYING CREDITS NEWS TODO
+%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_libdir}/kde3/*
+%attr(755,root,root) %{_libdir}/lib*.so.*.*
 %{_datadir}/applnk/Utilities/*
 %{_datadir}/apps/kmediafactory/*
 %{_datadir}/apps/kmediafactory_output/*
