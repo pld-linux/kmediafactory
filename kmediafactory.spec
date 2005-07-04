@@ -19,15 +19,19 @@ Requires:	zip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-KMediafactory is easy to use template based dvd authoring tool. You can quickly create DVD menus for home videos and TV recordings in three simple steps.
+KMediafactory is easy to use template based dvd authoring tool. You
+can quickly create DVD menus for home videos and TV recordings in
+three simple steps.
 
 %description -l pl
-KMediaFactory jest ³atwym w u¿yciu narzêdziem opartym na szablonach dvd. Mo¿esz szybko stworzyæ menu dvd do domowych filmów i nagrywaæ tv w trzech prostych krokach.
+KMediaFactory jest ³atwym w u¿yciu narzêdziem opartym na szablonach
+dvd. Mo¿esz szybko stworzyæ menu dvd do domowych filmów i nagrywaæ tv
+w trzech prostych krokach.
 
 %package devel
 Summary:	Header files for kmediafactory
 Summary(pl):	Pliki nag³ówkowe dla kmediafactory
-Group:		Development/Tools	
+Group:		Development/Tools
 
 %description devel
 This package contains header files for kmediafactory
@@ -38,16 +42,16 @@ Ten pakiet zawiera pliki nag³ówkowe programu kmediafactory
 %prep
 %setup -q
 
-%configure
-
 %build
-%{__make} 
+%configure
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install 
+%{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
