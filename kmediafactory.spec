@@ -6,14 +6,16 @@ Release:	0.1
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://susku.pyhaselka.fi/damu/software/kmediafactory/%{name}-%{version}.tar.bz2
-# Source0-md5:	e61efce22161907449b07f8472eb7c7c
+# Source0-md5:	a2901674bc558112837e356e45b93a5a
 URL:		http://susku.pyhaselka.fi/damu/software/kmediafactory/
 BuildRequires:	ImageMagick-devel >= 6.0
 BuildRequires:	dvdauthor >= 0.6.11
-BuildRequires:	libdv-devel
+BuildRequires:	qt-devel >= 3.3.2
+BuildRequires:	kdebase-devel >= 3.3
 BuildRequires:	mjpegtools
 Requires:	toolame
 Requires:	xine
+Requires:	zip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -43,10 +45,9 @@ Ten pakiet zawiera pliki nag³ówkowe programu kmediafactory
 
 %install
 rm -rf $RPM_BUILD_ROOT
-rm -rf $RPM_BUILD_ROOT/%{_datadir}
 
 %{__make} install 
-
+	DESTDIR=$RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
