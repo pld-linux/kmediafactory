@@ -13,6 +13,7 @@ BuildRequires:	dvdauthor >= 0.6.11
 BuildRequires:	kdebase-devel >= 9:3.3
 BuildRequires:	mjpegtools
 BuildRequires:	qt-devel >= 6:3.3.2
+BuildRequires:	rpmbuild(macros) >= 1.129
 Requires:	toolame
 Requires:	xine-ui
 Requires:	zip
