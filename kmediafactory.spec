@@ -1,12 +1,12 @@
 Summary:	Easy to use template based DVD authoring tool
 Summary(pl):	Proste narzêdzie do tworzenia DVD oparte na szablonach
 Name:		kmediafactory
-Version:	0.3.0
+Version:	0.4.0
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://susku.pyhaselka.fi/damu/software/kmediafactory/%{name}-%{version}.tar.bz2
-# Source0-md5:	a2901674bc558112837e356e45b93a5a
+# Source0-md5:	a51d5b6a0a5d9f0dcf819b6f81dc2e83
 URL:		http://susku.pyhaselka.fi/damu/software/kmediafactory/
 BuildRequires:	ImageMagick-c++-devel >= 1:6.0
 BuildRequires:	dvdauthor >= 0.6.11
@@ -76,7 +76,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_desktopdir}/kde/*
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 %attr(755,root,root) %{_libdir}/kde3/*.so
+%attr(755,root,root) %{_libdir}/kde3/plugins/designer/kmfwidgets.so
 %{_libdir}/kde3/*.la
+%{_libdir}/kde3/plugins/designer/kmfwidgets.la
 %attr(755,root,root) %{_bindir}/*
 
 %files devel
