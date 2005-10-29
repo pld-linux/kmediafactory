@@ -6,7 +6,7 @@ Release:	1
 License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:	http://susku.pyhaselka.fi/damu/software/kmediafactory/%{name}-%{version}.tar.bz2
-# Source0-md5:	a51d5b6a0a5d9f0dcf819b6f81dc2e83
+# Source0-md5:	8acea22f25bb24e829c6b04b64126d29
 URL:		http://susku.pyhaselka.fi/damu/software/kmediafactory/
 BuildRequires:	ImageMagick-c++-devel >= 1:6.0
 BuildRequires:	dvdauthor >= 0.6.11
