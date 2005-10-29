@@ -1,7 +1,7 @@
 Summary:	Easy to use template based DVD authoring tool
 Summary(pl):	Proste narzêdzie do tworzenia DVD oparte na szablonach
 Name:		kmediafactory
-Version:	0.4.0
+Version:	0.4.1
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Multimedia
@@ -18,6 +18,7 @@ Requires:	toolame
 Requires:	xine-ui
 Requires:	zip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Patch:		%{name}-includehints.pach
 
 %description
 KMediafactory is easy to use template based DVD authoring tool. You
@@ -42,6 +43,7 @@ Ten pakiet zawiera pliki nag³ówkowe programu kmediafactory.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %configure
