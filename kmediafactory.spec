@@ -1,17 +1,17 @@
 Summary:	Easy to use template based DVD authoring tool
 Summary(pl):	Proste narzêdzie do tworzenia DVD oparte na szablonach
 Name:		kmediafactory
-Version:	0.4.1
+Version:	0.5.2
 Release:	1
 License:	GPL v2
 Group:		X11/Applications/Multimedia
-Source0:	http://susku.pyhaselka.fi/damu/software/kmediafactory/%{name}-%{version}.tar.bz2
+Source0:        http://kotisivu.dnainternet.fi/damu0/software/kmediafactory/%{name}-%{version}.tar.bz2
 # Source0-md5:	8acea22f25bb24e829c6b04b64126d29
-Patch0:		%{name}-includehints.patch
-URL:		http://susku.pyhaselka.fi/damu/software/kmediafactory/
+URL:		http://kotisivu.dnainternet.fi/damu0/software/kmediafactory/
 BuildRequires:	ImageMagick-c++-devel >= 1:6.0
+BuildRequires:  dvd-slideshow
 BuildRequires:	gettext-devel
-BuildRequires:	kdebase-devel >= 9:3.3
+BuildRequires:	kdebase-devel >= 9:3.3.2
 BuildRequires:	libdv-devel
 BuildRequires:	libdvdread-devel
 BuildRequires:	libtheora-devel
@@ -21,7 +21,8 @@ BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRequires:	sed >= 4.0
 BuildRequires:	xine-lib-devel
 BuildRequires:	zip
-Requires:	dvdauthor < 0.6.11
+Requires:  	dvd-slideshow
+Requires:	dvdauthor >= 0.6.11
 Requires:	toolame
 Requires:	xine-ui
 Requires:	zip
@@ -51,10 +52,6 @@ Ten pakiet zawiera pliki nag³ówkowe programu kmediafactory.
 
 %prep
 %setup -q
-%patch0 -p1
-
-#sed -i -e 's,/lib\>,/%{_lib},' admin/{dv,dvdread,fontconfig,theora,xine}.m4
-sed -i -e 's,/lib\>,/%{_lib},' configure
 
 %build
 %configure \
