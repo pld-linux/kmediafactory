@@ -1,0 +1,11 @@
+--- kmediafactory-0.5.2/admin/funcs.m4.orig	2007-01-08 21:20:54.000000000 +0100
++++ kmediafactory-0.5.2/admin/funcs.m4	2007-01-08 21:22:44.000000000 +0100
+@@ -21,7 +21,7 @@
+     for ext in a so sl; do
+       if test -r "$i/$j/$1.$ext"; then
+         $2=$i
+-        $3=${j:3}
++        $3='${j:3}'
+         break 3
+       fi
+     done
