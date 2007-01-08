@@ -6,7 +6,7 @@ Release:	1
 License:	GPL v2
 Group:		X11/Applications/Multimedia
 Source0:        http://kotisivu.dnainternet.fi/damu0/software/kmediafactory/%{name}-%{version}.tar.bz2
-# Source0-md5:	8acea22f25bb24e829c6b04b64126d29
+# Source0-md5:	8067ad646b5bc25f871d044fa9cb9e21
 URL:		http://kotisivu.dnainternet.fi/damu0/software/kmediafactory/
 BuildRequires:	ImageMagick-c++-devel >= 1:6.0
 BuildRequires:  dvd-slideshow
