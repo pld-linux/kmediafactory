@@ -1,5 +1,5 @@
 Summary:	Easy to use template based DVD authoring tool
-Summary(pl):	Proste narzêdzie do tworzenia DVD oparte na szablonach
+Summary(pl.UTF-8):   Proste narzÄ™dzie do tworzenia DVD oparte na szablonach
 Name:		kmediafactory
 Version:	0.5.2
 Release:	1
@@ -37,22 +37,22 @@ KMediafactory is easy to use template based DVD authoring tool. You
 can quickly create DVD menus for home videos and TV recordings in
 three simple steps.
 
-%description -l pl
-KMediaFactory jest ³atwym w u¿yciu narzêdziem do tworzenia DVD opartym
-na szablonach. Pozwala szybko stworzyæ menu DVD do domowych filmów i
-nagrañ z TV w trzech prostych krokach.
+%description -l pl.UTF-8
+KMediaFactory jest Å‚atwym w uÅ¼yciu narzÄ™dziem do tworzenia DVD opartym
+na szablonach. Pozwala szybko stworzyÄ‡ menu DVD do domowych filmÃ³w i
+nagraÅ„ z TV w trzech prostych krokach.
 
 %package devel
 Summary:	Header files for kmediafactory
-Summary(pl):	Pliki nag³ówkowe dla kmediafactory
+Summary(pl.UTF-8):   Pliki nagÅ‚Ã³wkowe dla kmediafactory
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
 
 %description devel
 This package contains header files for kmediafactory.
 
-%description devel -l pl
-Ten pakiet zawiera pliki nag³ówkowe programu kmediafactory.
+%description devel -l pl.UTF-8
+Ten pakiet zawiera pliki nagÅ‚Ã³wkowe programu kmediafactory.
 
 %prep
 %setup -q
