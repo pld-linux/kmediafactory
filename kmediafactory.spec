@@ -1,5 +1,5 @@
 Summary:	Easy to use template based DVD authoring tool
-Summary(pl.UTF-8):   Proste narzędzie do tworzenia DVD oparte na szablonach
+Summary(pl.UTF-8):	Proste narzędzie do tworzenia DVD oparte na szablonach
 Name:		kmediafactory
 Version:	0.5.2
 Release:	1
@@ -44,7 +44,7 @@ nagrań z TV w trzech prostych krokach.
 
 %package devel
 Summary:	Header files for kmediafactory
-Summary(pl.UTF-8):   Pliki nagłówkowe dla kmediafactory
+Summary(pl.UTF-8):	Pliki nagłówkowe dla kmediafactory
 Group:		Development/Tools
 Requires:	%{name} = %{version}-%{release}
 
