@@ -13,7 +13,7 @@ Patch2:		%{name}-am110.patch
 Patch3:		%{name}-funcs.patch
 URL:		http://kotisivu.dnainternet.fi/damu0/software/kmediafactory/
 BuildRequires:	ImageMagick-c++-devel >= 1:6.0
-BuildRequires:	boost-filesystem-devel
+BuildRequires:	boost-devel >= 1.35.0
 BuildRequires:	gettext-devel
 BuildRequires:	kdebase-devel >= 9:3.3.2
 BuildRequires:	libdv-devel
