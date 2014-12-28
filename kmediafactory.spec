@@ -14,7 +14,7 @@ Patch3:		%{name}-funcs.patch
 URL:		http://kotisivu.dnainternet.fi/damu0/software/kmediafactory/
 BuildRequires:	ImageMagick-c++-devel >= 1:6.0
 BuildRequires:	boost-devel >= 1.35.0
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	kdebase-devel >= 9:3.3.2
 BuildRequires:	libdv-devel
 BuildRequires:	libdvdread-devel
